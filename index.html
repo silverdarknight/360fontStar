@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="keywords" content=""/>
+		<meta name="author" content="ZhangWeiJian"/>
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximun-scale=1,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	</head>
+
+	<body>
+		<div id="nav">
+			<p>手势密码</p>
+		</div>
+		<div class="container">
+			<div id="touchEl">
+				<div class="touchEl_Area">
+					<canvas id="touchEl_Area"></canvas>
+				</div>
+				<div class="touchEl_intro">
+					<p>请输入手势密码</p>
+				</div>
+			</div>
+			<div id="selectType">
+				<ul class="selectType">
+					<li class="selectType_Area">
+						<input id="selectType_setPW" type="radio" value="setPW" name="PWType" checked="true" class="PWTypeSelect">
+						<label for="selectType_setPW">设置密码</label>
+					</li>
+					<li class="selectType_Area">
+						<input id="selectType_checkPW" type="radio" value="checkPW" name="PWType" class="PWTypeSelect">
+						<label for="selectType_checkPW">验证密码</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--script type="text/javascript" src="../scripts/jquery.js"></script-->
+		<!--script type="text/javascript" src="../scripts/vue.js"></script-->
+		<script type="text/javascript" src="./scripts/index.js"></script>
+	</body>
+</html>

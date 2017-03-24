@@ -1,0 +1,74 @@
+body{
+	padding:0px 0px;
+	margin:0px;
+	background-color: #EDEDED;
+	font-family: "黑体","Microsoft Yahei",serif;
+}
+p{
+	margin: 0px;
+}
+ul{
+	padding:0px;
+	margin:0px;
+}
+.container{
+	overflow: hidden;
+}
+.error{
+	color:red;
+	font-size: 1.1em;
+}
+.success{
+	color:green;
+	font-size: 1.1em;
+}
+@media screen and (max-width: 1024px){
+	.container{
+		height: 100%;
+		padding:0% 10%;
+	}
+	#nav{
+		text-align: center;
+		font-size: 25px;
+		line-height: 3em;
+		background-color: white;
+		box-shadow: 1px 2px 3px gray;
+		margin-bottom: 10px;
+	}
+	#touchEl{
+		box-sizing:border-box;
+		margin: 3em 0;
+	}
+	#touchEl_Area{
+		position: absolute;
+		top:0px;
+		left:0px;
+		
+	}
+	.touchEl_Area{
+		width:100%;
+		margin-bottom: 2em;
+		position: relative;
+	}
+	.touchEl_Area:before{
+		content:"";
+		padding-top:100%;
+		display: inline-block;
+	}
+	.touchEl_intro{
+		text-align: center;
+	}
+	.selectType{
+		padding:0% 10%;
+		height: 60px;
+		display: flex;
+		flex-direction:column;
+		justify-content:space-between;
+		font-size: 18px;
+	}
+	.selectType_Area{
+		display: flex;
+		flex-direction:row;
+		justify-content:flex-start;
+	}
+}
