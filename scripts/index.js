@@ -292,6 +292,9 @@ var can = new function(){
 					setIntro('输入的密码不正确！',false,2000);
 				}							
 			}
+			//tempPW = '',testNum = 0		
+			tempPW = '';
+			testNum = 0;
 		}
 	};
 	function setIntro(val,sOrE,time){
