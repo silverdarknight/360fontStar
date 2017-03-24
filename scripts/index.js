@@ -16,9 +16,6 @@ var getPWType = function(){
 		}
 	};
 };
-for(var k=0;k<document.getElementsByClassName('PWTypeSelect').length;k++){
-	document.getElementsByClassName('PWTypeSelect')[k].addEventListener('click',getPWType,true);
-};
 //当touch / move时,返回相对canvas的X，Y坐标
 function touchAndMove(){
 	var touchElTop = document.getElementById('touchEl').offsetTop;
@@ -123,7 +120,7 @@ var can = new function(){
 		return ans;
 	}).call(this);
 	//touch时是否在9个点上
-	//在，添加到dotData上
+	//在，返回是第n个点
 	this.belongToArea = function(x,y){
 		for(var i=0;i<this.areaXY.length;i++){
 			var areaX = this.areaXY[i][1],areaY = this.areaXY[i][0];
@@ -287,12 +284,12 @@ var can = new function(){
 				//dotData 等同于PW
 				if(this.dotData.join('') == this.PW){
 					//密码正确，2s还原
-					setIntro('密码正确',true,2000);
+					setIntro('密码正确！',true,2000);
 				}
 				//不同
 				else{
 					//密码不正确，2s还原
-					setIntro('密码不正确',false,2000);
+					setIntro('输入的密码不正确！',false,2000);
 				}							
 			}
 		}
